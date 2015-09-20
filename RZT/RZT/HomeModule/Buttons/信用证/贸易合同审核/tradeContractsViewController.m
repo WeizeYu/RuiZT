@@ -67,7 +67,7 @@
     }
     //sdafasdf
     NSLog(@"!@3");
-
+    NSLog(@"1233123");
     myActionSheet = [[UIActionSheet alloc]
                      initWithTitle:nil
                      delegate:self
