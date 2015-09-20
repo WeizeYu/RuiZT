@@ -66,6 +66,7 @@
         [self.yudelegate showtext:@"123"];
     }
     //sdafasdf
+    //ftamsir
     NSLog(@"!@3");
     NSLog(@"1233123");
     NSLog(@"1233123");
