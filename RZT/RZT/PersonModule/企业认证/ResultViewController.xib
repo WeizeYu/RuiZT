@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ResultViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sRI-CP-t8X">
+                    <rect key="frame" x="0.0" y="80" width="320" height="320"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="审核成功" translatesAutoresizingMaskIntoConstraints="NO" id="yk0-c4-oi3">
+                            <rect key="frame" x="110" y="60" width="100" height="100"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="KQO-9W-zW0"/>
+                                <constraint firstAttribute="height" constant="100" id="rfC-7O-sGP"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="恭喜！审核通过，你可以办理业务了！" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YCn-8O-bs9">
+                            <rect key="frame" x="24" y="195" width="289" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="YCn-8O-bs9" secondAttribute="bottom" constant="78" id="2ex-jK-PAT"/>
+                        <constraint firstItem="YCn-8O-bs9" firstAttribute="top" secondItem="yk0-c4-oi3" secondAttribute="bottom" constant="35" id="69H-RM-uXA"/>
+                        <constraint firstAttribute="centerX" secondItem="YCn-8O-bs9" secondAttribute="centerX" constant="-8.5" id="Cvx-3t-UGA"/>
+                        <constraint firstItem="yk0-c4-oi3" firstAttribute="top" secondItem="sRI-CP-t8X" secondAttribute="top" constant="60" id="MIP-vu-6H6"/>
+                        <constraint firstAttribute="centerX" secondItem="yk0-c4-oi3" secondAttribute="centerX" id="VcB-oG-Gfw"/>
+                        <constraint firstItem="YCn-8O-bs9" firstAttribute="leading" secondItem="sRI-CP-t8X" secondAttribute="leading" constant="24" id="n4V-N9-uvF"/>
+                        <constraint firstItem="yk0-c4-oi3" firstAttribute="leading" secondItem="sRI-CP-t8X" secondAttribute="leading" constant="110" id="rDg-7D-5gW"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="rDg-7D-5gW"/>
+                            <exclude reference="2ex-jK-PAT"/>
+                            <exclude reference="n4V-N9-uvF"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="sRI-CP-t8X" secondAttribute="trailing" id="0B7-d3-vcG"/>
+                <constraint firstAttribute="bottom" secondItem="sRI-CP-t8X" secondAttribute="bottom" constant="80" id="YRE-E3-8ZD"/>
+                <constraint firstItem="sRI-CP-t8X" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="lbO-OT-KlD"/>
+                <constraint firstItem="sRI-CP-t8X" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="lla-6F-k0g"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="审核成功" width="84" height="87"/>
+    </resources>
+</document>
