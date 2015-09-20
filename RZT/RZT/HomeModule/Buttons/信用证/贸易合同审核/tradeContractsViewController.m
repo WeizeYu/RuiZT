@@ -65,7 +65,8 @@
     {
         [self.yudelegate showtext:@"123"];
     }
-    
+    //sdafasdf
+    NSLog(@"!@3");
 
     myActionSheet = [[UIActionSheet alloc]
                      initWithTitle:nil
