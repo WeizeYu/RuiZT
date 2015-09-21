@@ -9,6 +9,7 @@
 #import "DealMainViewController.h"
 #import "DealTableViewCell.h"
 #import "DealCheckViewController.h"
+#import "DealPullView.h"
 
 @interface DealMainViewController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -16,6 +17,8 @@
 @property (strong, nonatomic)UITableView *dealTableView;
 @property (strong, nonatomic)NSMutableArray *itemsArray;
 @property (strong, nonatomic)NSMutableArray *filterArray;
+@property (assign, nonatomic)BOOL isTap;
+@property (strong, nonatomic)DealPullView *dpView;
 
 @end
 
@@ -37,6 +40,46 @@
         NSFontAttributeName:[UIFont boldSystemFontOfSize:18]}];
     self.navigationController.navigationBar.barTintColor = [UIColor orangeColor];
     self.view.backgroundColor = [UIColor colorWithRed:240.0/255.0 green:240.0/255.0 blue:242.0/255.0 alpha:1.0];
+    
+    UIView *navigationView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 64)];
+    
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, navigationView.frame.size.width - 20, 64)];
+    label.text = @"我的订单";
+    label.font = [UIFont boldSystemFontOfSize:18.0f];
+    label.textColor = [UIColor whiteColor];
+    label.textAlignment = NSTextAlignmentCenter;
+    label.textColor = [UIColor whiteColor];
+    [navigationView addSubview:label];
+    
+    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(navigationView.frame.size.width - 20, 24, 40, 20)];
+    button.titleLabel.lineBreakMode = NSLineBreakByTruncatingMiddle;
+    button.titleLabel.font = [UIFont systemFontOfSize:12.0f];
+    [button setTitle:@"点击" forState:UIControlStateNormal];
+    [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [button setTitleColor:[UIColor blackColor] forState:UIControlStateHighlighted];
+    [button addTarget:self action:@selector(pullAction:) forControlEvents:UIControlEventTouchUpInside];
+    [navigationView addSubview:button];
+    
+    self.navigationItem.titleView = navigationView;
+}
+
+- (DealPullView *)dpView {
+    if (_dpView == nil) {
+        _dpView = [[DealPullView alloc]initWithFrame:CGRectMake(self.view.frame.size.width/4, 64, self.view.frame.size.width/2, 120)];
+        _dpView.itemsArray = [NSMutableArray arrayWithObjects:@"信用证", @"托收", @"贸易融资", @"资信调查", @"风险控制", nil];
+    }
+    return _dpView;
+}
+
+- (void)pullAction:(id)sender {
+    if (self.isTap) {
+        [self.dpView removeFromSuperview];
+    }
+    else {
+        [self.view addSubview:self.dpView];
+    }
+    
+    self.isTap = !self.isTap;
 }
 
 - (void)setupSegementControl {
