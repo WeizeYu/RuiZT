@@ -38,16 +38,16 @@
     
     [self.view addSubview:self.personTableView];
 }
--(void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-    self.tabBarController.tabBar.hidden=false;
-}
--(void)viewWillDisappear:(BOOL)animated
-{
-    [super viewWillDisappear:animated];
- self.tabBarController.tabBar.hidden=true;
-}
+//-(void)viewWillAppear:(BOOL)animated
+//{
+//    [super viewWillAppear:animated];
+//    self.tabBarController.tabBar.hidden=false;
+//}
+//-(void)viewWillDisappear:(BOOL)animated
+//{
+//    [super viewWillDisappear:animated];
+// self.tabBarController.tabBar.hidden=true;
+//}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

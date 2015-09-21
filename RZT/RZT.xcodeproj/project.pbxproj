@@ -44,6 +44,9 @@
 		73EEE7621BAC2C7F0026909B /* ButtonsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73EEE7601BAC2C7F0026909B /* ButtonsTableViewCell.xib */; };
 		73EEE7791BAC39260026909B /* tradeContractsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73EEE7771BAC39260026909B /* tradeContractsViewController.m */; };
 		73EEE77A1BAC39260026909B /* tradeContractsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73EEE7781BAC39260026909B /* tradeContractsViewController.xib */; };
+		F4274E761BAFB900006F87DE /* DealPullTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F4274E741BAFB900006F87DE /* DealPullTableViewCell.m */; };
+		F4274E771BAFB900006F87DE /* DealPullTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4274E751BAFB900006F87DE /* DealPullTableViewCell.xib */; };
+		F4274E7A1BAFBA6F006F87DE /* DealPullView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4274E791BAFBA6F006F87DE /* DealPullView.m */; };
 		F4B6AC691BAAAED8008F1764 /* DeatailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B6AC621BAAAED8008F1764 /* DeatailTableViewCell.m */; };
 		F4B6AC6A1BAAAED8008F1764 /* DeatailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4B6AC631BAAAED8008F1764 /* DeatailTableViewCell.xib */; };
 		F4B6AC6B1BAAAED8008F1764 /* PersonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B6AC651BAAAED8008F1764 /* PersonTableViewCell.m */; };
@@ -162,6 +165,11 @@
 		73EEE7761BAC39260026909B /* tradeContractsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tradeContractsViewController.h; sourceTree = "<group>"; };
 		73EEE7771BAC39260026909B /* tradeContractsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tradeContractsViewController.m; sourceTree = "<group>"; };
 		73EEE7781BAC39260026909B /* tradeContractsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = tradeContractsViewController.xib; sourceTree = "<group>"; };
+		F4274E731BAFB900006F87DE /* DealPullTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DealPullTableViewCell.h; sourceTree = "<group>"; };
+		F4274E741BAFB900006F87DE /* DealPullTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DealPullTableViewCell.m; sourceTree = "<group>"; };
+		F4274E751BAFB900006F87DE /* DealPullTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DealPullTableViewCell.xib; sourceTree = "<group>"; };
+		F4274E781BAFBA6F006F87DE /* DealPullView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DealPullView.h; sourceTree = "<group>"; };
+		F4274E791BAFBA6F006F87DE /* DealPullView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DealPullView.m; sourceTree = "<group>"; };
 		F4B6AC611BAAAED8008F1764 /* DeatailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeatailTableViewCell.h; sourceTree = "<group>"; };
 		F4B6AC621BAAAED8008F1764 /* DeatailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeatailTableViewCell.m; sourceTree = "<group>"; };
 		F4B6AC631BAAAED8008F1764 /* DeatailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeatailTableViewCell.xib; sourceTree = "<group>"; };
@@ -268,6 +276,8 @@
 				F4E6B56C1BAC008400E916BA /* DealCheckViewController.m */,
 				F4E6B5621BABDE5E00E916BA /* DealMainViewController.h */,
 				F4E6B5631BABDE5E00E916BA /* DealMainViewController.m */,
+				F4274E781BAFBA6F006F87DE /* DealPullView.h */,
+				F4274E791BAFBA6F006F87DE /* DealPullView.m */,
 			);
 			path = DealModule;
 			sourceTree = "<group>";
@@ -633,6 +643,9 @@
 				F4E6B57D1BAC13E500E916BA /* DealCheckFootView.h */,
 				F4E6B57E1BAC13E500E916BA /* DealCheckFootView.m */,
 				F4E6B5801BAC140C00E916BA /* DealCheckFootView.xib */,
+				F4274E731BAFB900006F87DE /* DealPullTableViewCell.h */,
+				F4274E741BAFB900006F87DE /* DealPullTableViewCell.m */,
+				F4274E751BAFB900006F87DE /* DealPullTableViewCell.xib */,
 			);
 			name = tableViewCell;
 			sourceTree = "<group>";
@@ -727,6 +740,7 @@
 				F4B6AC861BAABFDF008F1764 /* CheckInfoTableViewCell.xib in Resources */,
 				738FF6A31B9E825500F5318E /* LaunchScreen.xib in Resources */,
 				73EEE75C1BAC2C490026909B /* hotNewsTableViewCell.xib in Resources */,
+				F4274E771BAFB900006F87DE /* DealPullTableViewCell.xib in Resources */,
 				73EEE7561BAC2C370026909B /* homeDealTableViewCell.xib in Resources */,
 				F4B6AC901BAAD299008F1764 /* CompanyInfoTableViewCell.xib in Resources */,
 				F4E6B5521BABB80E00E916BA /* PersonHeadTableViewCell.xib in Resources */,
@@ -795,6 +809,7 @@
 				F4E6B57F1BAC13E500E916BA /* DealCheckFootView.m in Sources */,
 				7355BA4A1BACFA35005DAD85 /* ShowBigViewController.m in Sources */,
 				F4B6AC6D1BAAAED8008F1764 /* PersonViewController.m in Sources */,
+				F4274E761BAFB900006F87DE /* DealPullTableViewCell.m in Sources */,
 				F4B6AC7B1BAABA4E008F1764 /* BasicTableViewCell.m in Sources */,
 				F4E6B5511BABB80E00E916BA /* PersonHeadTableViewCell.m in Sources */,
 				F4E6B5561BABB91E00E916BA /* PersonNameTableViewCell.m in Sources */,
@@ -813,6 +828,7 @@
 				730701C91BA9510200593FBC /* mainTabBarViewController.m in Sources */,
 				73EEE7611BAC2C7F0026909B /* ButtonsTableViewCell.m in Sources */,
 				F4E6B5471BABB14A00E916BA /* PersonInfoViewController.m in Sources */,
+				F4274E7A1BAFBA6F006F87DE /* DealPullView.m in Sources */,
 				730413EF1BAA5D2700A6F45D /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
